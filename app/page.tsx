@@ -151,9 +151,9 @@ const LandingPage = () => {
                   style={{ pointerEvents: "auto", zIndex: 10000 }} // ✅ Force clickable
                 >
                   <motion.button
-                    className="px-6 py-2 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink font-bold"
+                    className="px-6 py-2 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink font-bold hover:cursor-pointer"
                     {...scaleOnHover}
-                    style={{ pointerEvents: "auto", zIndex: 10000 }} // ✅ Force clickable
+                    // style={{ pointerEvents: "auto", zIndex: 10000 }} 
                   >
                     Try Now
                   </motion.button>
@@ -225,7 +225,7 @@ const LandingPage = () => {
           >
             <Link href={"/home"}>
               <motion.button
-                className="flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-neon-cyan to-neon-blue font-bold text-white text-lg group"
+                className="flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-neon-cyan to-neon-blue font-bold text-white text-lg group hover:cursor-pointer"
                 {...scaleOnHover}
                 whileHover={{
                   boxShadow: "0 0 30px rgba(0, 245, 255, 0.5)",
@@ -515,7 +515,7 @@ const LandingPage = () => {
                 Tech Stack
               </h3>
               <motion.div
-                className="flex flex-wrap justify-center gap-4"
+                className="flex flex-wrap justify-center gap-4 "
                 variants={staggerContainer}
                 initial="initial"
                 whileInView="animate"
@@ -531,7 +531,7 @@ const LandingPage = () => {
                 ].map((skill) => (
                   <motion.span
                     key={skill}
-                    className="px-4 py-2 rounded-full bg-gradient-to-r from-neon-purple/20 to-neon-cyan/20 border border-neon-purple/50 text-sm"
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-neon-purple/20 to-neon-cyan/20 border border-neon-purple/50 text-sm z-50"
                     variants={{
                       initial: { opacity: 0, scale: 0.8 },
                       animate: { opacity: 1, scale: 1 },
@@ -765,7 +765,7 @@ const LandingPage = () => {
               viewport={{ once: true }}
             >
               <motion.a
-                href="https://instagram.com/ahaan.tsx"
+                href="https://x.com/Ahankhan474"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 p-4 rounded-xl bg-gradient-to-r from-sky-400 to-blue-600"
@@ -777,8 +777,8 @@ const LandingPage = () => {
               >
                 <Twitter className="w-6 h-6" />
                 <div className="text-left">
-                  <div className="font-bold">Instagram</div>
-                  <div className="text-sm opacity-80">@Ahaan.tsx</div>
+                  <div className="font-bold">X</div>
+                  <div className="text-sm opacity-80">@Ahankhan474</div>
                 </div>
               </motion.a>
 
@@ -791,7 +791,7 @@ const LandingPage = () => {
                 <GithubIcon className="w-6 h-6" />
                 <div className="text-left">
                   <div className="font-bold">Github</div>
-                  <div className="text-sm opacity-80">MdShahnawaz474</div>
+                  <div className="text-sm opacity-80">@MdShahnawaz474</div>
                 </div>
               </motion.a>
             </motion.div>
