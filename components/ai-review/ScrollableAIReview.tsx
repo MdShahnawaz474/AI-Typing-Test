@@ -32,7 +32,7 @@ export const ScrollableAIReview = ({ feedback }: ScrollableAIReviewProps) => {
   };
 
   return (
-    <div className="glass neon-border rounded-xl overflow-hidden mt-4">
+    <div className="glass neon-border rounded-xl overflow-hidden mt-4 ">
       {/* Fixed Header */}
       <div className="p-4 border-b border-gray-700/50">
         <div className="flex items-center justify-between">
@@ -57,7 +57,7 @@ export const ScrollableAIReview = ({ feedback }: ScrollableAIReviewProps) => {
       </div>
 
       {/* Scrollable Content */}
-      <div className="max-h-64 overflow-y-auto p-4 space-y-4 ">
+      <div className=" overflow-y-auto p-4 space-y-4 ">
         
         {/* Grammar Errors Section */}
         {feedback.grammarErrors.length > 0 && (
